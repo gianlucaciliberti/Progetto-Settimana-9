@@ -55,6 +55,83 @@ body {
   color: white;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-x {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.comments {
+  margin: 15px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.comment {
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #222;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.rate-btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 8px;
+  background-color: #222;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rate-btn:hover {
+  background: #333;
+}
+
+.rate-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #002fff;
+}
+
 .footerLink:hover {
   color: white !important;
 }

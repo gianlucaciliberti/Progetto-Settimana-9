@@ -14,7 +14,7 @@ function CommentModal({ show, movie, comments, onClose, onAdd }) {
 
                 {comments.map((c) => (
                     <div key={c._id}>
-                        ⭐ {c.rate} - {c.comment}
+                        {c.rate} - {c.comment}
                     </div>
                 ))}
 

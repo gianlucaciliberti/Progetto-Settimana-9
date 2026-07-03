@@ -7,18 +7,23 @@ import { useState } from "react";
 function MyNavbar({ onSearch }) {
     const [query, setQuery] = useState("");
     return (
-        <Navbar variant="dark" expand="lg">
-            <Container fluid>
+        <Navbar variant="dark" expand="lg" className="netflix-navbar">
+            <Container fluid className="d-flex align-items-center">
                 <Navbar.Brand href="#" style={{ color: '#e50914', fontWeight: 'bold' }}>
                     Netflix
                 </Navbar.Brand>
 
-                <Nav className="me-auto">
-                    <Nav.Link href="#">Home</Nav.Link>
-                    <Nav.Link href="#">Serie TV</Nav.Link>
-                    <Nav.Link href="#">Film</Nav.Link>
-                    <Nav.Link href="#">Aggiunti di recente</Nav.Link>
-                </Nav>
+                <div className="me-auto d-flex align-items-center">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#">Home</Nav.Link>
+                    </Nav>
+
+                    <Nav className="navLinks me-auto">
+                        <Nav.Link href="#">Serie TV</Nav.Link>
+                        <Nav.Link href="#">Film</Nav.Link>
+                        <Nav.Link href="#">Aggiunti di recente</Nav.Link>
+                    </Nav>
+                </div>
 
                 <Form className="d-flex"
                     onSubmit={(e) => {
@@ -34,7 +39,7 @@ function MyNavbar({ onSearch }) {
                         onChange={(e) => setQuery(e.target.value)} />
                 </Form>
 
-                <Nav>
+                <Nav className="navLinks">
                     <Nav.Link href="#">Kids</Nav.Link>
                     <Nav.Link href="#">👤</Nav.Link>
                 </Nav>

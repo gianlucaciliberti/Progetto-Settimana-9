@@ -5,6 +5,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.navLinks {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .navLinks {
+    display: flex !important;
+  }
+}
+
 .movie-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -40,4 +50,6 @@ body {
   border-radius: 10px;
   color: white;
 }
+
+
 

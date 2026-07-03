@@ -1,4 +1,4 @@
-function MovieSection({ title, movies }) {
+function MovieSection({ title, movies, onMovieClick }) {
     return (
         <div style={{ padding: "20px" }}>
             <h2 style={{ color: "white" }}>{title}</h2>
@@ -11,7 +11,8 @@ function MovieSection({ title, movies }) {
                 }}
             >
                 {movies.slice(0, 6).map((movie) => (
-                    <div key={movie.imdbID} className="movie-card">
+                    <div key={movie.imdbID} className="movie-card"
+                    onClick={() => onMovieClick(movie)}>
                         <img
                             src={
                                 movie.Poster !== "N/A"

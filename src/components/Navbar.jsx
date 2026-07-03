@@ -5,16 +5,17 @@ import Form from "react-bootstrap/Form";
 
 function MyNavbar() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar variant="dark" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Netflix</Navbar.Brand>
+                <Navbar.Brand href="#" style={{ color: '#e50914', fontWeight: 'bold' }}>
+                    Netflix
+                </Navbar.Brand>
 
                 <Nav className="me-auto">
                     <Nav.Link href="#">Home</Nav.Link>
-                    <Nav.Link href="#">TV Shows</Nav.Link>
-                    <Nav.Link href="#">Movies</Nav.Link>
-                    <Nav.Link href="#">Recently Added</Nav.Link>
-                    <Nav.Link href="#">My List</Nav.Link>
+                    <Nav.Link href="#">Serie TV</Nav.Link>
+                    <Nav.Link href="#">Film</Nav.Link>
+                    <Nav.Link href="#">Aggiunti di recente</Nav.Link>
                 </Nav>
 
                 <Form className="d-flex">

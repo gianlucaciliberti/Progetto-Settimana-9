@@ -15,7 +15,9 @@ function MyNavbar({ onSearch }) {
 
                 <div className="me-auto d-flex align-items-center">
                     <Nav className="me-auto">
-                        <Nav.Link href="#">Home</Nav.Link>
+                        <Nav.Link className="navHome" href="#">
+                            Home
+                        </Nav.Link>
                     </Nav>
 
                     <Nav className="navLinks me-auto">

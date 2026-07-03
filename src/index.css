@@ -9,6 +9,10 @@ body {
   display: none !important;
 }
 
+.navHome:hover, .navLinks:hover {
+  color: white !important;
+}
+
 @media (min-width: 992px) {
   .navLinks {
     display: flex !important;
@@ -49,6 +53,10 @@ body {
   width: 400px;
   border-radius: 10px;
   color: white;
+}
+
+.footerLink:hover {
+  color: white !important;
 }
 
 
